@@ -477,7 +477,7 @@ You should see `Hello from {your_name}: 0`, `Hello from {your_name}: 1`, ... pub
 When done, exit the container (`exit`) and stop it:
 
 ```bash
-docker compose down
+docker compose down -v
 ```
 
 ---
