@@ -1,0 +1,12 @@
+services:
+  ros2:
+    build: .
+    image: brian_ros2_image
+    container_name: brian_ros2_container
+    stdin_open: true
+    tty: true
+    environment:
+      - DISPLAY=host.docker.internal:0
+    volumes:
+      - ./ros2_ws:/ros2_ws
+    working_dir: /ros2_ws
